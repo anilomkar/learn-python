@@ -8,4 +8,4 @@ app.config["DEBUG"] = True
 def home():
     return "<h1>Welcome to the world of Python!</h1><p>Running from server - " + socket.gethostname() + "</p>"
 
-app.run()
+app.run(host='0.0.0.0')
